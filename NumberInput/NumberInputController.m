@@ -277,8 +277,8 @@ Here are the three approaches:
 	return handled;
 }
 
-//This method is called by the InputMethodKit when the user as selected a new input mode from the text input menu.
--(void)setValue:(id)value forTag:(unsigned long)tag client:(id)sender
+//This method is called by the InputMethodKit when the user has selected a new input mode from the text input menu.
+-(void)setValue:(id)value forTag:(long)tag client:(id)sender
 {
 	NSString*		newModeString = [(NSString*)value retain];
 	NSNumberFormatterStyle	currentMode = [[[NSApp delegate] conversionEngine] conversionMode];

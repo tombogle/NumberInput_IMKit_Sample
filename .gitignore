@@ -1,0 +1,10 @@
+
+NumberInput/\.DS_Store
+
+NumberInput/NumberInput\.xcodeproj/project\.xcworkspace/contents\.xcworkspacedata
+
+*.xcuserstate
+
+NumberInput/NumberInput\.xcodeproj/xcuserdata/tom\.xcuserdatad/xcschemes/NumberInput\.xcscheme
+
+NumberInput/NumberInput\.xcodeproj/xcuserdata/tom\.xcuserdatad/xcschemes/xcschememanagement\.plist

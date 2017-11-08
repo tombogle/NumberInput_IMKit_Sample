@@ -54,7 +54,6 @@
 		E9C425920BFA10060065E4C6 /* spellout.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = spellout.tiff; sourceTree = "<group>"; };
 		E9FB8BC90BF0D79B00305C76 /* NumberInputApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInputApplicationDelegate.h; sourceTree = "<group>"; };
 		E9FB8BCA0BF0D79B00305C76 /* NumberInputApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInputApplicationDelegate.m; sourceTree = "<group>"; };
-		E9FB8C530BF4A77900305C76 /* InputMethodKeysDictionary.dict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InputMethodKeysDictionary.dict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +137,6 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				E9FB8C530BF4A77900305C76 /* InputMethodKeysDictionary.dict */,
 				E99A791C0BFA9CBF00935A00 /* preferences.nib */,
 				E99A791F0BFAA07E00935A00 /* preferences.plist */,
 			);
@@ -194,13 +192,18 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NumberInput" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* NumberInput */;
 			projectDirPath = "";
 			projectRoot = "";
-			shouldCheckCompatibility = 1;
 			targets = (
 				8D1107260486CEB800E47090 /* NumberInput */,
 			);
@@ -281,6 +284,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Input Methods/\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = NumberInput;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -298,6 +302,7 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = NumberInput;
 				WRAPPER_EXTENSION = app;
 			};

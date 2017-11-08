@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
     server = [[IMKServer alloc] initWithName:(NSString*)kConnectionName bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
 	
     //load the bundle explicitly because in this case the input method is a background only application 
-	[NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
+    [NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
 	
 	//create the candidate window 
 	candidates = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
