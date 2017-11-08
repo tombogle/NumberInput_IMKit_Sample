@@ -66,7 +66,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 
 //add an awakeFromNib item so that we can set the action method.  Note that any menuItems without an action will be disabled when
-//displayed in the Text Input Menud.
+//displayed in the Text Input Menu.
 -(void)awakeFromNib
 {
 	NSMenuItem*		preferences = [_menu itemWithTag:1];

@@ -343,6 +343,14 @@ Here are the three approaches:
 
 -(NSMenu*)menu
 {
+    if ([self conformsToProtocol:@protocol(IMKStateSetting)])
+        NSLog(@"class conforms to protocol IMKStateSetting.");
+    else
+        NSLog(@"class does not conform to protocol IMKStateSetting.");
+    if ([self respondsToSelector:@selector(showPreferences:)])
+        NSLog(@"This class DOES respond to showPreferences.");
+    else
+        NSLog(@"This class does not respond to showPreferences.");
 	return [[NSApp delegate] menu];
 }
 
